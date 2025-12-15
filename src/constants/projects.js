@@ -1,0 +1,38 @@
+export const projects = [
+  {
+    title: "Project One",
+    description: "This is a description for project one.",
+    image: "https://via.placeholder.com/400x300.png/000000/FFFFFF?text=Light+Mode",
+    darkImage: "https://via.placeholder.com/400x300.png/FFFFFF/000000?text=Dark+Mode",
+    tags: ["React", "Node.js", "MongoDB"],
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "Project Two",
+    description: "This is a description for project two.",
+    image: "https://via.placeholder.com/400x300.png/000000/FFFFFF?text=Light+Mode",
+    darkImage: "https://via.placeholder.com/400x300.png/FFFFFF/000000?text=Dark+Mode",
+    tags: ["JavaScript", "HTML", "CSS"],
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "Project Three",
+    description: "This is a description for project three.",
+    image: "https://via.placeholder.com/400x300.png/000000/FFFFFF?text=Light+Mode",
+    darkImage: "https://via.placeholder.com/400x300.png/FFFFFF/000000?text=Dark+Mode",
+    tags: ["Python", "Flask", "SQLAlchemy"],
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "Project Four",
+    description: "This is a description for project four.",
+    image: "https://via.placeholder.com/400x300.png/000000/FFFFFF?text=Light+Mode",
+    darkImage: "https://via.placeholder.com/400x300.png/FFFFFF/000000?text=Dark+Mode",
+    tags: ["Vue", "Firebase", "TailwindCSS"],
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+];
