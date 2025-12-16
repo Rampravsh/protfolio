@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,16 @@ const router = createBrowserRouter([
           meta: {
             title: "Contact | Rpk",
             description: "Contact Rpk for work or collaboration.",
+          },
+        },
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+        handle: {
+          meta: {
+            title: "404 Not Found | Rpk",
+            description: "Page not found.",
           },
         },
       },
