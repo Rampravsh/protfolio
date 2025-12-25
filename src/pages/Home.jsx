@@ -1,6 +1,8 @@
 import PageWrapper from "../components/PageWrapper";
 import { useState, useEffect } from "react";
 import profileImg from "/profile.png";
+import lowProfile from "/lowProfile.png";
+import ProgressiveImage from "../utils/ProgressiveImage.jsx";
 
 export default function Home() {
   const [text, setText] = useState("");
@@ -73,10 +75,9 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <img
-              src={profileImg}
-              alt="profile"
-              className="w-80 h-80 object-cover rounded-full  animate-float"
+            <ProgressiveImage
+              lowResSrc={lowProfile} // Chhoti image ka link (Low Quality)
+              highResSrc={profileImg} // Badi image ka link (High Quality)
             />
           </div>
         </div>
