@@ -29,7 +29,7 @@ export default function Projects() {
                 alt={project.title}
                 className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center p-6 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500">
                 <h3 className="text-2xl font-bold text-white mb-2">
                   {project.title}
                 </h3>
@@ -68,6 +68,26 @@ export default function Projects() {
                       {tag}
                     </span>
                   ))}
+                </div>
+
+                {/* Mobile Links */}
+                <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 flex gap-3 lg:hidden">
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center backdrop-blur-md bg-white/30 dark:bg-white/10 border border-white/20 text-gray-900 dark:text-white text-sm px-3 py-2 rounded-lg shadow-sm hover:bg-white/50 dark:hover:bg-white/20 transition-all font-medium"
+                  >
+                    Live Demo
+                  </a>
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center backdrop-blur-md bg-white/30 dark:bg-white/10 border border-white/20 text-gray-900 dark:text-white text-sm px-3 py-2 rounded-lg shadow-sm hover:bg-white/50 dark:hover:bg-white/20 transition-all font-medium"
+                  >
+                    GitHub
+                  </a>
                 </div>
               </div>
             </div>
