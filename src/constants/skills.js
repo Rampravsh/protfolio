@@ -6,6 +6,7 @@ import {
   FaDocker,
   FaHtml5,
   FaCss3Alt,
+  FaJava,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -15,6 +16,8 @@ import {
   SiNextdotjs,
   SiPostgresql,
   SiGraphql,
+  SiCplusplus,
+  SiFlask,
 } from "react-icons/si";
 
 export const skills = [
@@ -32,4 +35,7 @@ export const skills = [
   { name: "Python", icon: FaPython, color: "#3776AB" },
   { name: "HTML5", icon: FaHtml5, color: "#E34F26" },
   { name: "CSS3", icon: FaCss3Alt, color: "#1572B6" },
+  { name: "C++", icon: SiCplusplus, color: "#00599C" },
+  { name: "Java", icon: FaJava, color: "#007396" },
+  { name: "Flask", icon: SiFlask, color: "#000000" },
 ];
