@@ -25,7 +25,7 @@ export default function Projects() {
               className="group relative bg-white dark:bg-gray-800 border border-gray-200 dark:border-white/10 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500"
             >
               <img
-                src={theme === "dark" ? project.darkImage : project.image}
+                src={theme === "dark" ? (project.darkImage || project.image) : project.image}
                 alt={project.title}
                 className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
               />
